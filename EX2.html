@@ -13,17 +13,15 @@
 <body>
     <div class="container">
         <div class="row">
-            
-        
         <div class="col">
             <p class="text-center">Click the button to replace "Bod" with "Programmer" in the paragraph below:</p>
 
             <p id="demo" class="text-center">Actor :  Bod
                 <br></br>
-                <button onclick="myFunction()" class="btn btn-info">Try it</button>
+                <button onclick="myChange()" class="btn btn-info">Try it</button>
             </p>
             <script>
-                function myFunction() {
+                function myChange() {
                     var str = document.getElementById("demo").innerHTML;
                     var res = str.replace("Bod", "Programmer");
                     document.getElementById("demo").innerHTML = res;
