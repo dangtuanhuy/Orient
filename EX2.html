@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EX2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            
+        
+        <div class="col">
+            <p class="text-center">Click the button to replace "Bod" with "Programmer" in the paragraph below:</p>
+
+            <p id="demo" class="text-center">Actor :  Bod
+                <br></br>
+                <button onclick="myFunction()" class="btn btn-info">Try it</button>
+            </p>
+            <script>
+                function myFunction() {
+                    var str = document.getElementById("demo").innerHTML;
+                    var res = str.replace("Bod", "Programmer");
+                    document.getElementById("demo").innerHTML = res;
+                }
+            </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
